@@ -11,7 +11,7 @@ func main() {
 		}
 		println(sum)
 		// 写通道
-		c <- struct{}
+		c <- struct{}{}
 	}(c)
 
 	println("NumGoroutine =", runtime.NumGoroutine())
